@@ -576,3 +576,29 @@ h2, h3 {
     height: 50px;
   }
 }
+.skill-wrapper {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, bottom 0.2s ease;
+}
+
+.skill-wrapper:hover .tooltip {
+  opacity: 1;
+  bottom: -45px; /* Move slightly down for animation */
+}
