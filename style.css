@@ -529,7 +529,7 @@ h2, h3 {
     }
 
     .Myproject img {
-        height: 80px;
+        height: 50px;
     }
 
     .Myproject h3 {
@@ -540,3 +540,41 @@ h2, h3 {
         font-size: 0.75rem;
     }
   }
+
+  /* skills.css */
+
+.ico-skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px;
+}
+
+.skills-ico {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(50%);
+}
+
+.skills-ico:hover {
+  transform: scale(1.5);
+  filter: grayscale(1.25rem);
+}
+
+@media (max-width: 768px) {
+  .skills-ico {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-ico {
+    width: 50px;
+    height: 50px;
+  }
+}
