@@ -180,10 +180,23 @@ h2, h3 {
 /* Responsive */
 @media (max-width: 768px) {
   .profile {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
+    -webkit-overflow-scrolling: touch;
   }
+
+  .profile::-webkit-scrollbar {
+  height: 6px;
+}
+
+.profile::-webkit-scrollbar-thumb {
+  background-color: #009688;
+  border-radius: 3px;
+}
 
   .tabs {
     padding: 10px 20px;
@@ -387,21 +400,26 @@ h2, h3 {
 }
 .tabs {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 8px; /* space between icon and label */
+  justify-content: center;
+  padding: 12px 20px;
+  background-color: #009688;
+  border-radius: 9999px;
+  box-shadow: 0 4px 15px rgba(0, 150, 136, 0.4);
+  transition: all 0.3s ease;
+  flex-shrink: 0; /* Prevent shrinking */
 }
 
-.tabs span {
-  font-size: 14px;
-  color: #fff;
+.tabs:hover {
+  background-color: #00796b;
+  transform: scale(1.05);
 }
-.profile img {
-  width: 50px;        /* You can adjust size here */
+
+.tabs img {
+  width: 50px; /* Adjust size */
   height: 50px;
-  object-fit: contain;
-  display: block;
 }
+
 
 
 /* Two Panel Layout */
