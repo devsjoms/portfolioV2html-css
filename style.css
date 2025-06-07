@@ -18,8 +18,6 @@ body {
   min-height: 100vh;
   overflow-y: auto;
 }
-
-/* Navigation Tabs */
 .profile {
   display: flex;
   justify-content: center;
