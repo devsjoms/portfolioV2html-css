@@ -575,3 +575,4 @@ h2, h3 {
 .skill-wrapper:hover .tooltip {
   opacity: 1;
   bottom: -45px; /* Move slightly down for animation */
+}
